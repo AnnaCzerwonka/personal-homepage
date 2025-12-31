@@ -5,6 +5,9 @@ export const theme = {
         text: "#6E7E91",
         white: "#FFFFFF",
         boxBackground: "#FFFFFF",
+        iron: "#D1D5DA",
+        scienceBlue: "#008080",
+        textPrimary: "#252525",
     },
     button: {
         text: "#FFFFFF",

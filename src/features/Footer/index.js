@@ -1,5 +1,5 @@
 import { Wrapper, Mail, Paragraph, Label, SocialIcons, SocialLink } from "./styled";
-import { GithubIcon } from "../Portfolio/GithubIcon";
+import { GithubIcon } from "../personalHomepage/Portfolio/GithubIcon";
 
 export const Footer = () => (
     <Wrapper>
