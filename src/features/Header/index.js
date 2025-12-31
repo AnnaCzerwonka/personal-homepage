@@ -10,7 +10,7 @@ export const Header = () => (
                 I’m a passionate Frontend Developer in love with React,
                 currently looking for new opportunities.
             </Lead>
-            <Button>
+            <Button href="mailto:annaczerwonka.p@gmail.com" title="annaczerwonka.p@gmail.com">
                 <span>✉</span> Hire me
             </Button>
         </Content>
