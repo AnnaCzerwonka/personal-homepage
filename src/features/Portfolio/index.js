@@ -1,6 +1,17 @@
 import { useEffect, useState } from "react";
-import { Section, Title } from "../Skills/styled";
-import { Wrapper, Tile, RepoName, Description, Links, Link } from "./styled";
+import {
+    Section,
+    GitHubIconContainer,
+    Header,
+    SubHeader,
+    Wrapper,
+    Tile,
+    RepoName,
+    Description,
+    Links,
+    Link
+} from "./styled";
+import { GithubIcon } from "./GithubIcon";
 
 export const Portfolio = () => {
     const [repos, setRepos] = useState([]);
@@ -14,8 +25,11 @@ export const Portfolio = () => {
 
     return (
         <Section>
-            <Title>Portfolio</Title>
-            <p>My recent projects from GitHub:</p>
+            <GitHubIconContainer>
+                <GithubIcon />
+            </GitHubIconContainer>
+            <Header>Portfolio</Header>
+            <SubHeader>My recent projects from GitHub:</SubHeader>
 
             <Wrapper>
                 {repos.map(repo => (

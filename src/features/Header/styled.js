@@ -28,7 +28,7 @@ export const Logo = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FFFFFF;
+    color: ${({ theme }) => theme.colors.white};
     font-size: clamp(30px, 8vw, 80px);
     font-weight: 700;
 `;
@@ -90,6 +90,11 @@ export const Button = styled.a`
 
     &:active {
         box-shadow: ${({ theme }) => theme.button.activeShadow};
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px ${({ theme }) => theme.colors.primary};
     }
 
     @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
